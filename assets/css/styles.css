@@ -8,6 +8,7 @@
 
 html {
     font-size: 62.5%;
+    scroll-behavior: smooth;
 }
 
 body {
@@ -32,6 +33,12 @@ body {
     font-size: 1.8rem;
     font-weight: 600;
     text-decoration: none;
+}
+
+.btn:hover {
+    color: var(--primary-color);
+    border: 1px solid currentColor;
+    background: #fff;
 }
 
 .fixed {
@@ -90,6 +97,10 @@ body {
     text-decoration: none;
 }
 
+.header .cta-group .cta:hover {
+    text-decoration: underline;
+}
+
 .header .cta-group .cta.btn {
     color: #1ebfc1;
     text-align: center;
@@ -103,6 +114,7 @@ body {
 }
 
 .header .cta-group .cta.btn:hover {
+    text-decoration: none;
     color: #fff;
     background: #1ebfc1;
 }
@@ -288,4 +300,408 @@ body {
     font-size: 1rem;
     font-weight: 500;
     line-height: 33px;
+}
+
+/* =============== Features ================ */
+.feature {
+    margin-top: 130px;
+}
+
+.feature-header {
+    width: 50.43%;
+    min-width: 250px;
+}
+
+.feature .sub-title {
+    color: #767e7e;
+    font-size: 1.2rem;
+    font-weight: 700;
+}
+
+.feature .title {
+    color: #0d1111;
+    font-size: 4.2rem;
+    font-weight: 700;
+    line-height: 1.334; /* 133.333% */
+    margin-top: 18px;
+}
+
+.feature .desc {
+    color: #767e7e;
+    font-size: 1.8rem;
+    font-weight: 400;
+    line-height: normal;
+    margin-top: 18px;
+}
+
+.feature-list {
+    display: flex;
+    gap: 200px;
+    width: 89.5%;
+    margin-top: 80px;
+}
+
+.feature-list .item .heading {
+    color: #0d1111;
+    font-size: 2rem;
+    font-weight: 600;
+    margin-top: 26px;
+}
+
+.feature-list .item .desc {
+    color: #9da6a5;
+    font-size: 1.6rem;
+    font-weight: 400;
+    line-height: 1.6875; /* 168.75% */
+    margin-top: 16px;
+}
+
+/* =============== Courses ================ */
+.course {
+    margin-top: 130px;
+}
+
+.course-header .sub-title {
+    color: #767e7e;
+    font-size: 1.2rem;
+    font-weight: 700;
+}
+
+.course-header .title {
+    color: #0d1111;
+    font-size: 4.2rem;
+    font-weight: 700;
+    margin-top: 18px;
+}
+
+.course-header .row {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-top: 18px;
+}
+
+.course-header .row .desc {
+    color: #767e7e;
+    font-size: 1.8rem;
+    font-weight: 400;
+    line-height: 1.7778; /* 177.778% */
+    max-width: 525px;
+}
+
+.course-header .row .link {
+    color: #1ebfc1;
+    font-size: 1.4rem;
+    font-weight: 700;
+    text-decoration: none;
+}
+
+.course-header .row .link:hover {
+    text-decoration: underline 2px;
+}
+
+.course-list {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 80px;
+}
+
+.course-item {
+    position: relative;
+    width: 30.7%;
+    border-radius: 8px;
+}
+
+.course-item .course-img {
+    position: relative;
+}
+
+.course-item .course-img img {
+    width: 100%;
+    height: 393px;
+    object-fit: cover;
+    border-radius: 8px;
+}
+
+.course-item .course-img:hover img {
+    box-shadow: 0px 16px 90px 0px rgba(0, 0, 0, 0.1);
+}
+
+.course-item .course-img .layering {
+    position: absolute;
+    inset: 0;
+    background: #d0efed;
+    opacity: 0.35;
+    border-radius: 8px;
+}
+
+.course-info {
+    position: absolute;
+    bottom: -124px;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 90.53%;
+    padding: 18px 25px 25px;
+    border-radius: 8px;
+    box-shadow: 0px 16px 90px 0px rgba(0, 0, 0, 0.05);
+    background: #fff;
+}
+
+.course-info .heading {
+    color: #0d1111;
+    font-size: 2.2rem;
+    font-weight: 700;
+    line-height: normal;
+}
+
+.course-info .price {
+    color: #767e7e;
+    font-size: 1.6rem;
+    font-weight: 400;
+    margin-top: 16px;
+    line-height: normal;
+}
+
+.course-info .price strong {
+    color: #0d1111;
+    font-size: 2.2rem;
+    font-weight: 700;
+}
+
+.course-info .desc {
+    color: #9da6a5;
+    font-size: 1.4rem;
+    font-weight: 400;
+    margin-top: 6px;
+}
+
+.course-info .stats {
+    display: flex;
+    gap: 10px;
+    margin-top: 18px;
+}
+
+.course-info .stats span {
+    color: #9da6a5;
+    font-size: 1.4rem;
+    font-weight: 400;
+    line-height: normal;
+}
+
+.course-info .stats span::before {
+    content: "";
+    position: relative;
+    top: -2.4px;
+    display: inline-block;
+    width: 6px;
+    height: 6px;
+    border-radius: 50%;
+    margin-right: 10px;
+    background: #1ebfc1;
+}
+
+/* =============== Stats ================ */
+.stats {
+    margin-top: 359px;
+}
+
+.stat-list {
+    display: flex;
+    padding: 0 155px;
+    justify-content: space-between;
+}
+
+.stat-item {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.stat-item .value {
+    color: #0d1111;
+    font-size: 6.2rem;
+    font-weight: 700;
+    line-height: normal;
+}
+
+.stat-item .label {
+    color: #767e7e;
+    font-size: 1.8rem;
+    font-weight: 400;
+    margin-top: 11px;
+}
+
+/* =============== Feedback ================ */
+.feedback {
+    margin-top: 300px;
+}
+
+.feedback .body {
+    display: flex;
+}
+
+.feedback .info-block {
+    width: 36%;
+}
+
+.feedback .quote {
+    color: #5d6564;
+    font-size: 3.2rem;
+    font-weight: 400;
+    line-height: 1.5; /* 150% */
+    margin-top: 27px;
+}
+
+.feedback .quotee-info {
+    color: #767e7e;
+    font-size: 1.6rem;
+    font-weight: 400;
+    line-height: normal;
+    margin-top: 33px;
+}
+
+.feedback .quotee-info strong {
+    color: #070707;
+    font-weight: 500;
+}
+
+.feedback .btn-group {
+    display: flex;
+    gap: 30px;
+    margin-top: 52px;
+}
+
+.feedback .btn-group .btn {
+    min-width: 50px;
+    line-height: 50px;
+    padding: 0;
+    border-radius: 50%;
+    border: none;
+    background: #2ac9bf;
+    cursor: pointer;
+}
+
+.feedback .avatar-block {
+    position: relative;
+    width: 64%;
+    padding-left: 345px;
+    padding-top: 77px;
+}
+
+.feedback .avatar {
+    position: absolute;
+    width: 78px;
+    height: 78px;
+    border-radius: 50%;
+    object-fit: cover;
+}
+
+.feedback .cen-avt {
+    position: static;
+    width: 235px;
+    height: 235px;
+}
+
+.feedback .size-2 {
+    width: 110px;
+    height: 110px;
+}
+
+.feedback .size-3 {
+    width: 92px;
+    height: 92px;
+}
+
+/* =============== Admission ================ */
+.admission {
+    margin-top: 167px;
+    padding: 76px 0 88px;
+    background: #def6f5;
+}
+
+.admission .body {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 86.84%;
+}
+
+.admission .title {
+    color: #070707;
+    font-size: 4.2rem;
+    font-weight: 700;
+    line-height: normal;
+}
+
+.admission .desc {
+    color: #767e7e;
+    font-size: 1.8rem;
+    font-weight: 400;
+    line-height: normal;
+    margin-top: 18px;
+}
+
+.admission .btn {
+    min-width: 186px;
+    line-height: 68px;
+    border-radius: 14px;
+}
+
+/* =============== Footer ================ */
+.footer {
+    padding: 131px 0 50px;
+}
+
+.footer .row {
+    display: flex;
+    justify-content: space-between;
+}
+
+.footer .column .title {
+    color: #2e2e2e;
+    font-size: 1.8rem;
+    font-weight: 500;
+}
+
+.footer .column .list {
+    margin-top: 26px;
+}
+
+.footer .column .item {
+    display: flex;
+    align-items: center;
+}
+
+.footer .column .item a {
+    display: flex;
+    color: #535353;
+    font-size: 1.6rem;
+    font-weight: 400;
+    line-height: normal;
+    text-decoration: none;
+}
+
+.footer .column .item a:hover {
+    text-decoration: underline;
+}
+
+.footer .column .item + .item {
+    margin-top: 20px;
+}
+
+.footer .column .icon {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 20px;
+    height: 20px;
+    margin-right: 9px;
+}
+
+.footer .copyright {
+    color: #b0b5b4;
+    font-size: 1.8rem;
+    font-weight: 400;
+    text-align: center;
+    margin-top: 80px;
 }
